@@ -37,7 +37,7 @@ Steply CMS is a role-based content management system designed for educational in
 ## Credits
 
 Graduation Project 2025  
-Supervised by Dr. Eng. Omaima Goher & Asst. Lect. Dalia Tourky
+Supervised by Dr. Eng. Omaima Goher & Eng. Mahmoud Mohamed
 
 ## License
 
