@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CMS Demo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="brand">
+                    <a href="#home">Steply</a>
+                </div>
+                
+                <!-- Mobile menu toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="login.php" class="btn btn-primary btn-sm">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Future with Expert-Led Courses</h1>
+            <p class="hero-subtitle">Discover world-class learning experiences designed to accelerate your career and unlock your potential</p>
+            <div class="hero-cta">
+                <a href="#courses" class="btn btn-primary btn-lg">Start Learning Today</a>
+                <a href="#features" class="btn btn-outline btn-lg ml-4">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-24 bg-secondary-50" id="features">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="reveal slide-in-up">Why Choose Steply?</h2>
+                <p class="reveal slide-in-up stagger-1 text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Experience learning like never before with our cutting-edge platform designed for modern learners
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-container">
+                <div class="card reveal slide-in-up text-center">
+                    <div class="card-body">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-4">Expert Instructors</h3>
+                        <p class="text-secondary-600">Learn from industry professionals with years of real-world experience</p>
+                    </div>
+                </div>
+                
+                <div class="card reveal slide-in-up text-center">
+                    <div class="card-body">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-4">Interactive Learning</h3>
+                        <p class="text-secondary-600">Engage with hands-on projects and real-world applications</p>
+                    </div>
+                </div>
+                
+                <div class="card reveal slide-in-up text-center">
+                    <div class="card-body">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-4">Certified Learning</h3>
+                        <p class="text-secondary-600">Earn recognized certificates to boost your professional credentials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Catalog Section -->
+    <section class="py-24" id="courses">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="reveal slide-in-up">Featured Courses</h2>
+                <p class="reveal slide-in-up stagger-1 text-lg text-secondary-600">
+                    Discover our most popular courses designed to advance your career
+                </p>
+            </div>
+
+            <!-- Sample Course Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-container">
+                <div class="card course-card reveal slide-in-up">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop" class="card-img-top" alt="Web Development">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Stack Web Development</h5>
+                        <p class="card-text text-secondary-600">Master modern web development with React, Node.js, and MongoDB. Build real-world applications from scratch.</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-2xl font-bold text-primary-600">$99.99</span>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card course-card reveal slide-in-up">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science & Analytics</h5>
+                        <p class="card-text text-secondary-600">Learn Python, machine learning, and data visualization to become a data science expert.</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-2xl font-bold text-primary-600">$129.99</span>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card course-card reveal slide-in-up">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" class="card-img-top" alt="Digital Marketing">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Marketing Mastery</h5>
+                        <p class="card-text text-secondary-600">Master SEO, social media marketing, and paid advertising to grow any business online.</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-2xl font-bold text-primary-600">$79.99</span>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-24 bg-primary-600 text-white">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="reveal slide-in-up">
+                    <div class="text-4xl font-bold mb-2" data-counter="1000">0</div>
+                    <div class="text-primary-200">Students Enrolled</div>
+                </div>
+                <div class="reveal slide-in-up stagger-1">
+                    <div class="text-4xl font-bold mb-2" data-counter="50">0</div>
+                    <div class="text-primary-200">Expert Instructors</div>
+                </div>
+                <div class="reveal slide-in-up stagger-2">
+                    <div class="text-4xl font-bold mb-2" data-counter="100">0</div>
+                    <div class="text-primary-200">Courses Available</div>
+                </div>
+                <div class="reveal slide-in-up stagger-3">
+                    <div class="text-4xl font-bold mb-2" data-counter="95">0</div>
+                    <div class="text-primary-200">Success Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-24 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+        <div class="container text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6 reveal slide-in-up">Ready to Start Your Learning Journey?</h2>
+                <p class="text-xl mb-8 text-primary-100 reveal slide-in-up stagger-1">
+                    Join thousands of students who have transformed their careers with our expert-led courses
+                </p>
+                <div class="reveal slide-in-up stagger-2">
+                    <a href="#" class="btn btn-lg bg-white text-primary-600 hover:bg-primary-50 mr-4">Get Started Free</a>
+                    <a href="#" class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary-600">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white py-16">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Steply</h3>
+                    <p class="text-secondary-300">Transforming education through innovative online learning experiences.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Courses</h4>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Data Science</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-secondary-700 mt-12 pt-8 text-center text-secondary-400">
+                <p>&copy; 2024 Steply. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating action button -->
+    <button class="fab" id="fabButton" title="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/modern-interactions.js"></script>
+    <script src="js/microinteractions.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animate counters when they come into view
+            const counters = document.querySelectorAll('[data-counter]');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.dataset.counter);
+                        animateCounter(counter, target, 2000);
+                        counterObserver.unobserve(counter);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => counterObserver.observe(counter));
+
+            // Scroll progress indicator
+            window.addEventListener('scroll', () => {
+                const scrollProgress = document.getElementById('scrollProgress');
+                const scrollTop = document.documentElement.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrollPercent = (scrollTop / scrollHeight) * 100;
+                scrollProgress.style.width = scrollPercent + '%';
+            });
+            
+            // FAB functionality
+            document.getElementById('fabButton').addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            const timer = setInterval(() => {
+                start += increment;
+                element.textContent = Math.floor(start);
+                
+                if (start >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                }
+            }, 16);
+        }
+    </script>
+</body>
+</html>
+
