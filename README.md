@@ -41,4 +41,4 @@ Supervised by Dr. Eng. Omaima Goher & Eng. Mahmoud Mohamed
 
 ## License
 
-MIT (or update to match your school's guidelines)
+MIT
